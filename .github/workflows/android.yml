@@ -1,4 +1,4 @@
-name: Android CI
+name: Kivy Android CI
 
 on:
   push:
@@ -13,14 +13,22 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: set up JDK 17
-      uses: actions/setup-java@v4
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: gradle
 
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
-    - name: Build with Gradle
-      run: ./gradlew build
+    # Set up Python environment
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12' # Choose the Python version you need for Kivy
+
+    # Install Kivy and other dependencies
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install kivy
+        # Add other dependencies here, including buildozer if you are using it for packaging
+
+    # Build the Kivy app for Android
+    - name: Build Kivy App
+      run: |
+        # Add the commands to build your Kivy app for Android
+        # This might involve using buildozer or another tool depending on your setup
