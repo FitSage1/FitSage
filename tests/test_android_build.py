@@ -17,7 +17,7 @@ def test_install_dependencies():
     Test the installation of dependencies.
     """
     with patch('subprocess.run') as mock_run:
-        from .github.workflows.android import install_dependencies
+        from github.workflows.android import install_dependencies
         install_dependencies()
         calls = [call(['pip', 'install', dep], check=True) for dep in ['kivy', 'Flask', 'SQLAlchemy', 'matplotlib', 'pandas', 'pytest', 'KivyMD', 'buildozer', 'pyjnius', 'plyer', 'pylint', 'cython']]
         mock_run.assert_has_calls(calls, any_order=True)
