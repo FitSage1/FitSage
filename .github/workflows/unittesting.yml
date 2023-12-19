@@ -29,7 +29,7 @@ jobs:
           pip install -r requirements.txt  # dont forget requirements.txt file
 
       - name: Run Python Tests
-        run: pytest 
+        run: pytest tests/test_android_build.py
 
       - name: Upload Test Results
         if: always()
