@@ -27,6 +27,6 @@ def test_build_kivy_app():
     Test the building of the Kivy app.
     """
     with patch('subprocess.run') as mock_run:
-        from .github.workflows.android import build_kivy_app
+        from github.workflows.android import build_kivy_app
         build_kivy_app()
         mock_run.assert_called_once_with(['buildozer', 'android', 'debug'], check=True)
