@@ -18,17 +18,28 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.12' # Choose the Python version you need for Kivy
+        python-version: '3.12.1' # Choose the Python version you need for Kivy
 
     # Install Kivy and other dependencies
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install kivy
-        # Add other dependencies here, including buildozer if you are using it for packaging
+        pip install Flask
+        pip install SQLAlchemy
+        pip install matplotlib
+        pip install pandas
+        pip install pytest
+        pip install KivyMD
+        pip install buildozer
+        pip install pyjnius
+        pip install plyer
+        pip install pylint
+        pip install cython
 
     # Build the Kivy app for Android
     - name: Build Kivy App
       run: |
         # Add the commands to build your Kivy app for Android
         # This might involve using buildozer or another tool depending on your setup
+  
