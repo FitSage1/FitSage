@@ -1,4 +1,5 @@
 # FitSage
+
 Introduction
 
 FitSage, the Workout Tracker App, is designed as a robust, fully integrated solution for professional trainers and their clients. It aims to replace conventional tools such as PDFs, Excel spreadsheets (.xlsx), and .csv files. The app offers a highly personalized exercise experience, featuring detailed workout customization and advanced performance tracking. This dual approach not only facilitates easier progress tracking for both trainer and client but also ensures more accurate and effective performance monitoring. As a result, trainers can make faster and more precise adjustments to cater to individual client needs, leading to enhanced outcomes.
