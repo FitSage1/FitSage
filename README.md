@@ -1,3 +1,9 @@
+"""
+FitSage: A Workout Tracker App
+
+FitSage is designed to enhance training efficiency for professional trainers and fitness enthusiasts by offering advanced workout customization, performance tracking, and user-friendly visual aids based on scientific principles of fitness. This holistic tool replaces conventional training methods and optimizes training outcomes through personalized exercise experiences and precise performance monitoring.
+"""
+
 # FitSage
 
 Introduction
