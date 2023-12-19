@@ -40,6 +40,20 @@ jobs:
     # Build the Kivy app for Android
     - name: Build Kivy App
       run: |
-        # Add the commands to build your Kivy app for Android
-        # This might involve using buildozer or another tool depending on your setup
-  
+        # Install dependencies for buildozer
+        sudo apt-get update
+        sudo apt-get install -y python3-pip build-essential git python3 python3-dev ffmpeg libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev zlib1g-dev
+        sudo apt-get install -y libgstreamer1.0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good
+        sudo apt-get install -y buildozer
+
+        # Create a buildozer.spec file if it does not exist
+        buildozer init
+
+        # Modify the buildozer.spec file to include necessary requirements
+        sed -i '/^requirements =/c\requirements = python3,kivy,Flask==3.0.0,SQLAlchemy==2.0.23,matplotlib,pandas,pytest,KivyMD,pyjnius,plyer,pylint,openssl,cython' buildozer.spec
+
+        # Add any other necessary configurations to the buildozer.spec file
+        # For example, setting the application name, package name, version, etc.
+
+        # build the app
+        buildozer -v android debug
