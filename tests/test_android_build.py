@@ -8,7 +8,7 @@ def test_setup_python():
     Test the setup of the Python environment.
     """
     with patch('subprocess.run') as mock_run:
-        from .github.workflows.android import setup_python
+        from github.workflows.android import setup_python
         setup_python()
         mock_run.assert_called_once_with(['actions/setup-python@v4', 'python-version: 3.12.1'], check=True)
 
