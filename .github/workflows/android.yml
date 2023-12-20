@@ -1,0 +1,59 @@
+name: Kivy Android CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    # Set up Python environment
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12.1' # Choose the Python version you need for Kivy
+
+    # Install Kivy and other dependencies
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install kivy
+        pip install Flask
+        pip install SQLAlchemy
+        pip install matplotlib
+        pip install pandas
+        pip install pytest
+        pip install KivyMD
+        pip install buildozer
+        pip install pyjnius
+        pip install plyer
+        pip install pylint
+        pip install cython
+
+    # Build the Kivy app for Android
+    - name: Build Kivy App
+      run: |
+        # Install dependencies for buildozer
+        sudo apt-get update
+        sudo apt-get install -y python3-pip build-essential git python3 python3-dev ffmpeg libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev zlib1g-dev
+        sudo apt-get install -y libgstreamer1.0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good
+        sudo apt-get install -y buildozer
+
+        # Create a buildozer.spec file if it does not exist
+        buildozer init
+
+        # Modify the buildozer.spec file to include necessary requirements
+        sed -i '/^requirements =/c\requirements = python3,kivy,Flask==3.0.0,SQLAlchemy==2.0.23,matplotlib,pandas,pytest,KivyMD,pyjnius,plyer,pylint,openssl,cython' buildozer.spec
+
+        # Add any other necessary configurations to the buildozer.spec file
+        # For example, setting the application name, package name, version, etc.
+
+        # build the app
+        buildozer -v android debug
