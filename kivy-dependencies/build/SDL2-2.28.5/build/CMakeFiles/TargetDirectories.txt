@@ -1,0 +1,12 @@
+/home/om/FitSage/kivy-dependencies/build/SDL2-2.28.5/build/CMakeFiles/sdl_headers_copy.dir
+/home/om/FitSage/kivy-dependencies/build/SDL2-2.28.5/build/CMakeFiles/SDL2main.dir
+/home/om/FitSage/kivy-dependencies/build/SDL2-2.28.5/build/CMakeFiles/SDL2.dir
+/home/om/FitSage/kivy-dependencies/build/SDL2-2.28.5/build/CMakeFiles/SDL2-static.dir
+/home/om/FitSage/kivy-dependencies/build/SDL2-2.28.5/build/CMakeFiles/SDL2_test.dir
+/home/om/FitSage/kivy-dependencies/build/SDL2-2.28.5/build/CMakeFiles/uninstall.dir
+/home/om/FitSage/kivy-dependencies/build/SDL2-2.28.5/build/CMakeFiles/edit_cache.dir
+/home/om/FitSage/kivy-dependencies/build/SDL2-2.28.5/build/CMakeFiles/rebuild_cache.dir
+/home/om/FitSage/kivy-dependencies/build/SDL2-2.28.5/build/CMakeFiles/list_install_components.dir
+/home/om/FitSage/kivy-dependencies/build/SDL2-2.28.5/build/CMakeFiles/install.dir
+/home/om/FitSage/kivy-dependencies/build/SDL2-2.28.5/build/CMakeFiles/install/local.dir
+/home/om/FitSage/kivy-dependencies/build/SDL2-2.28.5/build/CMakeFiles/install/strip.dir

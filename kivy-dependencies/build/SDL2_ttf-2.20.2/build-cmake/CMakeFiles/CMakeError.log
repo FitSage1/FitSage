@@ -1,0 +1,42 @@
+Determining if the function FT_Get_Var_Blend_Coordinates exists failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_ttf-2.20.2/build-cmake/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_03012 && [1/2] Building C object CMakeFiles/cmTC_03012.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_03012
+FAILED: cmTC_03012 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=FT_Get_Var_Blend_Coordinates -rdynamic CMakeFiles/cmTC_03012.dir/CheckFunctionExists.c.o -o cmTC_03012  -lm && :
+/usr/bin/ld: CMakeFiles/cmTC_03012.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `FT_Get_Var_Blend_Coordinates'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function FT_Set_Var_Blend_Coordinates exists failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_ttf-2.20.2/build-cmake/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1c4a6 && [1/2] Building C object CMakeFiles/cmTC_1c4a6.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_1c4a6
+FAILED: cmTC_1c4a6 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=FT_Set_Var_Blend_Coordinates -rdynamic CMakeFiles/cmTC_1c4a6.dir/CheckFunctionExists.c.o -o cmTC_1c4a6  -lm && :
+/usr/bin/ld: CMakeFiles/cmTC_1c4a6.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `FT_Set_Var_Blend_Coordinates'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function FT_Done_MM_Var exists failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_ttf-2.20.2/build-cmake/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e9e99 && [1/2] Building C object CMakeFiles/cmTC_e9e99.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e9e99
+FAILED: cmTC_e9e99 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=FT_Done_MM_Var -rdynamic CMakeFiles/cmTC_e9e99.dir/CheckFunctionExists.c.o -o cmTC_e9e99  -lm && :
+/usr/bin/ld: CMakeFiles/cmTC_e9e99.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `FT_Done_MM_Var'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+

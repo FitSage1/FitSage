@@ -1,0 +1,11 @@
+prefix=/home/om/FitSage/kivy-dependencies/dist
+exec_prefix=/home/om/FitSage/kivy-dependencies/dist
+libdir=/home/om/FitSage/kivy-dependencies/dist/lib
+includedir=/home/om/FitSage/kivy-dependencies/dist/include
+
+Name: FLAC++
+Description: Free Lossless Audio Codec Library (C++ API)
+Version: 1.3.4
+Requires: flac
+Libs: -L${libdir} -lFLAC++
+Cflags: -I${includedir}

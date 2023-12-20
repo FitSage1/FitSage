@@ -1,0 +1,478 @@
+Determining if the include file io.h exists failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_8fa13 && [1/2] Building C object CMakeFiles/cmTC_8fa13.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_8fa13.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing  -fPIE -o CMakeFiles/cmTC_8fa13.dir/CheckIncludeFile.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: io.h: No such file or directory
+    1 | #include <io.h>
+      |          ^~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the setmode exist failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c9d18 && [1/2] Building C object CMakeFiles/cmTC_c9d18.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_c9d18.dir/CheckSymbolExists.c.o 
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing  -fPIE -o CMakeFiles/cmTC_c9d18.dir/CheckSymbolExists.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘setmode’ undeclared (first use in this function)
+    8 |   return ((int*)(&setmode))[argc];
+      |                   ^~~~~~~
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+    4 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+ninja: build stopped: subcommand failed.
+
+
+File /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setmode
+  return ((int*)(&setmode))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the jbg_newlen exist failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_13fba && [1/2] Building C object CMakeFiles/cmTC_13fba.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_13fba.dir/CheckSymbolExists.c.o 
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing  -fPIE -o CMakeFiles/cmTC_13fba.dir/CheckSymbolExists.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: jbig.h: No such file or directory
+    2 | #include <jbig.h>
+      |          ^~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <jbig.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef jbg_newlen
+  return ((int*)(&jbg_newlen))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file GL/glu.h exists failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_8b7cf && [1/2] Building C object CMakeFiles/cmTC_8b7cf.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_8b7cf.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing  -fPIE -o CMakeFiles/cmTC_8b7cf.dir/CheckIncludeFile.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: GL/glu.h: No such file or directory
+    1 | #include <GL/glu.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file GL/glut.h exists failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_59a60 && [1/2] Building C object CMakeFiles/cmTC_59a60.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_59a60.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing  -fPIE -o CMakeFiles/cmTC_59a60.dir/CheckIncludeFile.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: GL/glut.h: No such file or directory
+    1 | #include <GL/glut.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file GLUT/glut.h exists failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_f5b29 && [1/2] Building C object CMakeFiles/cmTC_f5b29.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_f5b29.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing  -fPIE -o CMakeFiles/cmTC_f5b29.dir/CheckIncludeFile.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: GLUT/glut.h: No such file or directory
+    1 | #include <GLUT/glut.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file OpenGL/gl.h exists failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ee58b && [1/2] Building C object CMakeFiles/cmTC_ee58b.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_ee58b.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing  -fPIE -o CMakeFiles/cmTC_ee58b.dir/CheckIncludeFile.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: OpenGL/gl.h: No such file or directory
+    1 | #include <OpenGL/gl.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file OpenGL/glu.h exists failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_31e10 && [1/2] Building C object CMakeFiles/cmTC_31e10.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_31e10.dir/CheckIncludeFile.c.o 
+/usr/bin/cc   -Wall -Winline -W -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -Wdeclaration-after-statement -fstrict-aliasing  -fPIE -o CMakeFiles/cmTC_31e10.dir/CheckIncludeFile.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: OpenGL/glu.h: No such file or directory
+    1 | #include <OpenGL/glu.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C SOURCE FILE Test HAVE_MATH_LIBRARY failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_f4178 && [1/2] Building C object CMakeFiles/cmTC_f4178.dir/src.c.o
+[2/2] Linking C executable cmTC_f4178
+FAILED: cmTC_f4178 
+: && /usr/bin/cc -pthread  CMakeFiles/cmTC_f4178.dir/src.c.o -o cmTC_f4178   && :
+/usr/bin/ld: CMakeFiles/cmTC_f4178.dir/src.c.o: in function `main':
+src.c:(.text+0x33): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+    #include <math.h>
+    int main(int argc, char** argv) {
+      return (int)pow(argc, 2.5);
+    }
+  
+Determining if files OpenGL/glut.h exist failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ef6d8 && [1/2] Building C object CMakeFiles/cmTC_ef6d8.dir/HAVE_OPENGL_GLUT_H.c.o
+FAILED: CMakeFiles/cmTC_ef6d8.dir/HAVE_OPENGL_GLUT_H.c.o 
+/usr/bin/cc   -pthread  -fPIE -o CMakeFiles/cmTC_ef6d8.dir/HAVE_OPENGL_GLUT_H.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CheckIncludeFiles/HAVE_OPENGL_GLUT_H.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CheckIncludeFiles/HAVE_OPENGL_GLUT_H.c:2:10: fatal error: OpenGL/glut.h: No such file or directory
+    2 | #include <OpenGL/glut.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <OpenGL/glut.h>
+
+
+int main(void){return 0;}
+
+Determining if files shlwapi.h exist failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_38781 && [1/2] Building C object CMakeFiles/cmTC_38781.dir/HAVE_SHLWAPI_H.c.o
+FAILED: CMakeFiles/cmTC_38781.dir/HAVE_SHLWAPI_H.c.o 
+/usr/bin/cc   -pthread  -fPIE -o CMakeFiles/cmTC_38781.dir/HAVE_SHLWAPI_H.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CheckIncludeFiles/HAVE_SHLWAPI_H.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CheckIncludeFiles/HAVE_SHLWAPI_H.c:2:10: fatal error: shlwapi.h: No such file or directory
+    2 | #include <shlwapi.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <shlwapi.h>
+
+
+int main(void){return 0;}
+
+Determining if files wincodec.h exist failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c76b7 && [1/2] Building C object CMakeFiles/cmTC_c76b7.dir/HAVE_WINCODEC_H.c.o
+FAILED: CMakeFiles/cmTC_c76b7.dir/HAVE_WINCODEC_H.c.o 
+/usr/bin/cc   -pthread  -fPIE -o CMakeFiles/cmTC_c76b7.dir/HAVE_WINCODEC_H.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CheckIncludeFiles/HAVE_WINCODEC_H.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CheckIncludeFiles/HAVE_WINCODEC_H.c:2:10: fatal error: wincodec.h: No such file or directory
+    2 | #include <wincodec.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <wincodec.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h exist failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b158f && [1/2] Building C object CMakeFiles/cmTC_b158f.dir/HAVE_WINDOWS_H.c.o
+FAILED: CMakeFiles/cmTC_b158f.dir/HAVE_WINDOWS_H.c.o 
+/usr/bin/cc   -pthread  -fPIE -o CMakeFiles/cmTC_b158f.dir/HAVE_WINDOWS_H.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CheckIncludeFiles/HAVE_WINDOWS_H.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CheckIncludeFiles/HAVE_WINDOWS_H.c:2:10: fatal error: windows.h: No such file or directory
+    2 | #include <windows.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <windows.h>
+
+
+int main(void){return 0;}
+
+Performing C SOURCE FILE Test WEBP_HAVE_FLAG_SSE41 failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_276a1 && [1/2] Building C object CMakeFiles/cmTC_276a1.dir/src.c.o
+FAILED: CMakeFiles/cmTC_276a1.dir/src.c.o 
+/usr/bin/cc -DWEBP_HAVE_FLAG_SSE41 -I/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp -pthread  -fPIE -o CMakeFiles/cmTC_276a1.dir/src.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c:5:9: error: unknown type name ‘this’
+    5 |         this is not valid code
+      |         ^~~~
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c:5:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘not’
+    5 |         this is not valid code
+      |                 ^~~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      #include "/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp/cmake/../src/dsp/dsp.h"
+      int main(void) {
+        #if !defined(WEBP_USE_SSE41)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    
+Performing C SOURCE FILE Test WEBP_HAVE_FLAG_MIPS32 failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a4a0f && [1/2] Building C object CMakeFiles/cmTC_a4a0f.dir/src.c.o
+FAILED: CMakeFiles/cmTC_a4a0f.dir/src.c.o 
+/usr/bin/cc -DWEBP_HAVE_FLAG_MIPS32 -I/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp -pthread  -fPIE -o CMakeFiles/cmTC_a4a0f.dir/src.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c:5:9: error: unknown type name ‘this’
+    5 |         this is not valid code
+      |         ^~~~
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c:5:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘not’
+    5 |         this is not valid code
+      |                 ^~~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      #include "/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp/cmake/../src/dsp/dsp.h"
+      int main(void) {
+        #if !defined(WEBP_USE_MIPS32)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    
+Performing C SOURCE FILE Test WEBP_HAVE_FLAG_MIPS32 failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_04963 && [1/2] Building C object CMakeFiles/cmTC_04963.dir/src.c.o
+FAILED: CMakeFiles/cmTC_04963.dir/src.c.o 
+/usr/bin/cc -DWEBP_HAVE_FLAG_MIPS32 -I/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp -pthread -mips32 -fPIE -o CMakeFiles/cmTC_04963.dir/src.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command-line option ‘-mips32’; did you mean ‘-mpc32’?
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      #include "/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp/cmake/../src/dsp/dsp.h"
+      int main(void) {
+        #if !defined(WEBP_USE_MIPS32)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    
+Performing C SOURCE FILE Test WEBP_HAVE_FLAG_MIPS_DSP_R2 failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_69d6d && [1/2] Building C object CMakeFiles/cmTC_69d6d.dir/src.c.o
+FAILED: CMakeFiles/cmTC_69d6d.dir/src.c.o 
+/usr/bin/cc -DWEBP_HAVE_FLAG_MIPS_DSP_R2 -I/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp -pthread  -fPIE -o CMakeFiles/cmTC_69d6d.dir/src.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c:5:9: error: unknown type name ‘this’
+    5 |         this is not valid code
+      |         ^~~~
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c:5:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘not’
+    5 |         this is not valid code
+      |                 ^~~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      #include "/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp/cmake/../src/dsp/dsp.h"
+      int main(void) {
+        #if !defined(WEBP_USE_MIPS_DSP_R2)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    
+Performing C SOURCE FILE Test WEBP_HAVE_FLAG_MIPS_DSP_R2 failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ed8af && [1/2] Building C object CMakeFiles/cmTC_ed8af.dir/src.c.o
+FAILED: CMakeFiles/cmTC_ed8af.dir/src.c.o 
+/usr/bin/cc -DWEBP_HAVE_FLAG_MIPS_DSP_R2 -I/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp -pthread -mdspr2 -fPIE -o CMakeFiles/cmTC_ed8af.dir/src.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command-line option ‘-mdspr2’
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      #include "/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp/cmake/../src/dsp/dsp.h"
+      int main(void) {
+        #if !defined(WEBP_USE_MIPS_DSP_R2)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    
+Performing C SOURCE FILE Test HAS_COMPILE_FLAG failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_dcfd3 && [1/2] Building C object CMakeFiles/cmTC_dcfd3.dir/src.c.o
+FAILED: CMakeFiles/cmTC_dcfd3.dir/src.c.o 
+/usr/bin/cc -DHAS_COMPILE_FLAG  -pthread -mdspr2 -fPIE   -mno-dspr2 -o CMakeFiles/cmTC_dcfd3.dir/src.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command-line option '-mdspr2'
+cc: error: unrecognized command-line option '-mno-dspr2'; did you mean '-mno-sse2'?
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test WEBP_HAVE_FLAG_NEON failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_932b5 && [1/2] Building C object CMakeFiles/cmTC_932b5.dir/src.c.o
+FAILED: CMakeFiles/cmTC_932b5.dir/src.c.o 
+/usr/bin/cc -DWEBP_HAVE_FLAG_NEON -I/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp -pthread  -fPIE -o CMakeFiles/cmTC_932b5.dir/src.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c:5:9: error: unknown type name ‘this’
+    5 |         this is not valid code
+      |         ^~~~
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c:5:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘not’
+    5 |         this is not valid code
+      |                 ^~~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      #include "/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp/cmake/../src/dsp/dsp.h"
+      int main(void) {
+        #if !defined(WEBP_USE_NEON)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    
+Performing C SOURCE FILE Test WEBP_HAVE_FLAG_NEON failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e866c && [1/2] Building C object CMakeFiles/cmTC_e866c.dir/src.c.o
+FAILED: CMakeFiles/cmTC_e866c.dir/src.c.o 
+/usr/bin/cc -DWEBP_HAVE_FLAG_NEON -I/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp -pthread -mfpu=neon -fPIE -o CMakeFiles/cmTC_e866c.dir/src.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command-line option ‘-mfpu=neon’
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      #include "/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp/cmake/../src/dsp/dsp.h"
+      int main(void) {
+        #if !defined(WEBP_USE_NEON)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    
+Performing C SOURCE FILE Test WEBP_HAVE_FLAG_MSA failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_15232 && [1/2] Building C object CMakeFiles/cmTC_15232.dir/src.c.o
+FAILED: CMakeFiles/cmTC_15232.dir/src.c.o 
+/usr/bin/cc -DWEBP_HAVE_FLAG_MSA -I/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp -pthread  -fPIE -o CMakeFiles/cmTC_15232.dir/src.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c:5:9: error: unknown type name ‘this’
+    5 |         this is not valid code
+      |         ^~~~
+/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c:5:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘not’
+    5 |         this is not valid code
+      |                 ^~~
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      #include "/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp/cmake/../src/dsp/dsp.h"
+      int main(void) {
+        #if !defined(WEBP_USE_MSA)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    
+Performing C SOURCE FILE Test WEBP_HAVE_FLAG_MSA failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c66b8 && [1/2] Building C object CMakeFiles/cmTC_c66b8.dir/src.c.o
+FAILED: CMakeFiles/cmTC_c66b8.dir/src.c.o 
+/usr/bin/cc -DWEBP_HAVE_FLAG_MSA -I/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp -pthread -mmsa -fPIE -o CMakeFiles/cmTC_c66b8.dir/src.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command-line option ‘-mmsa’
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      #include "/home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/external/libwebp/cmake/../src/dsp/dsp.h"
+      int main(void) {
+        #if !defined(WEBP_USE_MSA)
+        this is not valid code
+        #endif
+        return 0;
+      }
+    
+Performing C SOURCE FILE Test HAS_COMPILE_FLAG failed with the following output:
+Change Dir: /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c4f86 && [1/2] Building C object CMakeFiles/cmTC_c4f86.dir/src.c.o
+FAILED: CMakeFiles/cmTC_c4f86.dir/src.c.o 
+/usr/bin/cc -DHAS_COMPILE_FLAG  -pthread -mmsa -fPIE   -mno-msa -o CMakeFiles/cmTC_c4f86.dir/src.c.o -c /home/om/FitSage/kivy-dependencies/build/SDL2_image-2.8.0/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command-line option '-mmsa'
+cc: error: unrecognized command-line option '-mno-msa'; did you mean '-Wno-hsa'?
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main(void) { return 0; }
