@@ -1,0 +1,11 @@
+prefix=/home/om/FitSage/kivy-dependencies/dist
+exec_prefix=/home/om/FitSage/kivy-dependencies/dist
+libdir=/home/om/FitSage/kivy-dependencies/dist/lib
+includedir=/home/om/FitSage/kivy-dependencies/dist/include
+
+Name: libtiff
+Description:  Tag Image File Format (TIFF) library.
+Version: 4.2.0
+Libs: -L/home/om/FitSage/kivy-dependencies/dist/lib -ltiff
+Libs.private: 
+Cflags: -I/home/om/FitSage/kivy-dependencies/dist/include
