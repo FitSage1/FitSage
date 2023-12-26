@@ -11,7 +11,22 @@ print(f"{a} + {b} is {c}")
 print("program exited.")
 
 import mysql.connector
-import time
-cnx = mysql.connector.connect(user='root', password='El3nksamkfshab3!!!', host='localhost', database='masterdb')
-print(cnx)
-time.sleep(120)
+
+
+def connect_to_database():
+    try:
+        connection = mysql.connector.connect(user='root', password='El3nksamkfshab3!!!', host='localhost', database='masterdb')
+        return connection
+    except mysql.connector.Error as e:
+        return f"Error: {e}"
+
+
+def query_database(connection, query):
+    try:
+        cursor = connection.cursor()
+        cursor.execute(query)
+        results = cursor.fetchall()
+        cursor.close()
+        return results
+    except mysql.connector.Error as e:
+        return f"Error: {e}"
