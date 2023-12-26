@@ -8,7 +8,35 @@ services:
       dockerfile: ./Dockerfile
     command: ["sh", "-c", "pip install debugpy -t /tmp && python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 -m flask run --no-debugger --no-reload --host 0.0.0.0 --port 5002"]
     ports:
-      - 5002:5002
-      - 5678:5678
+      - "5002:5002"
+      - "5678:5678"
     environment:
       - FLASK_APP=main.py
+    volumes:
+      - .:/app
+
+  flyway:
+    image: flyway/flyway:10.4.1
+    command: -url=jdbc:mysql://db -schemas=user_profiles -user=root -password=El3nksamkfshab3!!! -connectRetries=60 migrate
+    volumes:
+      - .:/flyway/sql
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.2.0
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: El3nksamkfshab3!!!
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  adminer:
+    image: adminer:4.8.1
+    restart: always
+    ports:
+      - "8081:8080"
+
+volumes:
+  mysql_data:
