@@ -33,7 +33,7 @@ RUN apt-get update && \
     libffi-dev \
     libssl-dev \
     curl \
-    lsb-release
+    lsb-release 
 
 
 WORKDIR /app
