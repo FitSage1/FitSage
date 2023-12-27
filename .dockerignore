@@ -9,18 +9,19 @@
 **/.pytest_cache
 **/.settings
 **/.toolstarget
-**/.vs
+.Ds_Store
 **/.github
-**/.vscode
 **/*.*proj.user
+**/build_kivy_deps.sh
+**/*.log
+tmp/*
+__pycache__/*
 **/*.dbmdl
 **/*.jfm
 **/bin
+/bin/
 **/charts
-
-**/docker-compose*
-**/compose*
-**/Dockerfile*
+**/.gitattributes
 **/node_modules
 **/.cosine  
 **/npm-debug.log
@@ -33,3 +34,7 @@
 **/values.dev.yaml
 LICENSE
 README.md
+
+# Include necessary files (Should not be ignored)
+!/main.py
+!/buildozer.spec

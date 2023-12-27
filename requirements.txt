@@ -27,7 +27,7 @@ idna==3.6
 iniconfig==2.0.0
 itsdangerous==2.1.2
 Jinja2==3.1.2
-Kivy @ https://github.com/kivy/kivy/archive/master.zip#sha256=1c703d9a790ad4befd636041db53574ac93c7002277a8a86d605e3c3db99c98c
+Kivy @ https://github.com/kivy/kivy/archive/stable.zip
 Kivy-examples==2.2.1
 Kivy-Garden==0.1.5
 kivymd==1.1.1

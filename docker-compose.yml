@@ -1,4 +1,4 @@
-version: '3.4'
+version: '3.8'
 
 services:
   fitsage:
@@ -7,23 +7,44 @@ services:
       dockerfile: ./Dockerfile
     ports:
       - "5002:5002"
+    develop:
+    watch:
+      - action: sync
+        path: ./
+        target: /app
+        ignore:
+          - .git
+          - .gitignore
+          - .vscode
+          - .gitattributes
+          - .env
+          - .venv
+          - .github
+      - action: rebuild
+        path: ./Dockerfile
 
   flyway:
     image: flyway/flyway:10.4.1
     command: -url=jdbc:mysql://db -schemas=user_profiles -user=root -password=El3nksamkfshab3!!! -connectRetries=60 migrate
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 2m
     volumes:
       - .:/flyway/sql
     depends_on:
       - db
 
   db:
-    image: mysql:8.2.0
+    image: mysql:8.0.35
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: El3nksamkfshab3!!!
     volumes:
       - mysql_data:/var/lib/mysql
+    ports:
+      - "3310:3309"
 
   adminer:
     image: adminer:4.8.1
