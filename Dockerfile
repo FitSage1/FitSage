@@ -1,7 +1,6 @@
 # For more information, please refer to https://aka.ms/vscode-docker-python
 FROM python:3.11.7
 
-EXPOSE 5002
 
 ENV BIND_ADDRESS=0.0.0.0
 ENV PORT=5002

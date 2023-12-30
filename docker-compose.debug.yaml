@@ -29,7 +29,7 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
     ports:
-      -3310:3309 
+      -3306:3306
 
   adminer:
     image: adminer:4.8.1
