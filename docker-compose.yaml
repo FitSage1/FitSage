@@ -5,9 +5,8 @@ services:
     build: .
     ports:
       - "5002:5002"
-    env_file: .env
     volumes:
-    - ./FitSage:/app
+    - .:/app
     develop:
       watch:
       - action: sync
@@ -18,7 +17,6 @@ services:
           - .gitignore
           - .vscode
           - .gitattributes
-          - .env
           - .venv
           - .github
       - action: rebuild
@@ -29,7 +27,7 @@ services:
   flyway:
     image: flyway/flyway:10.4.1
     env_file: .env
-    command: -url=jdbc:mysql://db:3306/masterdb -schemas=masterdb -user=${MYSQL_USER} -password=${MYSQL_ROOT_PASSWORD} -connectRetries=60 migrate
+    command: -url=jdbc:mysql://db:3307/masterdb -schemas=masterdb -user=${MYSQL_USER} -password=${MYSQL_PASSWORD} -connectRetries=60 migrate
     deploy:
       restart_policy:
         condition: on-failure
@@ -38,20 +36,22 @@ services:
       - .:/flyway/sql
     depends_on:
       - db
-    netowrks:
-      - my-network
 
   db:
     build:
       context: ./mysql
+    environment:
+      - MYSQL_USER=om
+      - MYSQL_ROOT_PASSWORD=El3nksamkfshab3!!!
+      - MYSQL_PASSWORD=om4455
+      - MYSQL_DATABASE = masterdb
     #image: mysql:8.0.35
     command: --default-authentication-plugin=caching_sha2_password
     restart: always
-    env_file: .env
     volumes:
       - mysql_data:/var/lib/mysql
     ports:
-      - "3306:3306"
+      - "3307:3306"
     networks:
       - my-network
 
@@ -59,7 +59,7 @@ services:
     image: adminer:4.8.1
     restart: always
     ports:
-      - "8081:8080"
+      - "8081:8081"
     networks:
       - my-network
 

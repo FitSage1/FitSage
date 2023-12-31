@@ -15,7 +15,7 @@ import mysql.connector
 
 def connect_to_database():
     try:
-        connection = mysql.connector.connect(user='root', password='El3nksamkfshab3!!!', host='localhost', database='masterdb')
+        connection = mysql.connector.connect(user='om', password='El3nksamkfshab3!!!', host='db', database='masterdb')
         return connection
     except mysql.connector.Error as e:
         return f"Error: {e}"

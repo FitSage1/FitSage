@@ -2,8 +2,6 @@
 FROM python:3.11.7
 
 
-ENV BIND_ADDRESS=0.0.0.0
-ENV PORT=5002
 
 # Keeps Python from generating .pyc files in the container
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -14,9 +12,12 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 COPY requirements.txt .
-# Install system dependencies for both Buildozer and your app
-RUN apt-get update && \
-    apt-get install --no-install-recommends -y \
+# Update and install dependencies in separate steps
+RUN apt-get update && apt-get install -y \
+    curl \
+    lsb-release
+
+RUN apt-get install -y --no-install-recommends \
     libgl1-mesa-dev \
     libgles2-mesa-dev \
     build-essential \
@@ -25,8 +26,7 @@ RUN apt-get update && \
     ffmpeg \
     zip \
     unzip \
-    openjdk-8-jdk \
-    python-kivy \
+    openjdk-17-jdk \
     python3-pip \
     libsdl2-dev \
     libsdl2-image-dev \
@@ -41,14 +41,14 @@ RUN apt-get update && \
     gstreamer1.0-plugins-base \
     gstreamer1.0-plugins-good \
     libffi-dev \
-    libssl-dev \
-    curl \
-    lsb-release && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/* && \
-    python -m pip install --no-cache-dir -r requirements.txt && \
-    pip install buildozer==1.5.0 --upgrade Cython==0.29.33
+    libssl-dev
 
+# Clean up
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Install Python packages
+RUN python -m pip install --no-cache-dir -r requirements.txt
+RUN pip install buildozer==1.5.0 --upgrade Cython==0.29.33
 
 COPY . /app
 
@@ -59,4 +59,4 @@ USER appuser
 
 
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
-CMD ["gunicorn", "--bind", "${BIND_ADDRESS}:${PORT}", "main:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5002", "main:app"]
